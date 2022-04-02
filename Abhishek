@@ -1,0 +1,18 @@
+#include<stdio.h>
+int Add(int n)
+{
+   if(n==0)
+   return 1;
+   else
+   return n+Add(n-1);
+}
+int main()
+{
+ int num,res;
+
+ printf("Enter Number : ");
+ scanf("%d",&num);
+ res=Add(num);
+ printf("Sum of Number%d is : %d",num,res);
+ 
+}
